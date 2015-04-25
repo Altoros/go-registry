@@ -1,0 +1,33 @@
+{
+	"ImportPath": "github.com/Altoros/go-registry",
+	"GoVersion": "go1.3.3",
+	"Deps": [
+		{
+			"ImportPath": "github.com/cloudfoundry/bosh-agent/errors",
+			"Rev": "96e8f348e35d8539e0f3599fe806e899f1490f49"
+		},
+		{
+			"ImportPath": "github.com/cloudfoundry/bosh-agent/logger",
+			"Rev": "96e8f348e35d8539e0f3599fe806e899f1490f49"
+		},
+		{
+			"ImportPath": "github.com/cloudfoundry/bosh-init/registry",
+			"Comment": "v0.0.1-3-g914d2ee",
+			"Rev": "914d2eeb0910ea64b75cfdfd26bea4f494f689dc"
+		},
+		{
+			"ImportPath": "github.com/onsi/ginkgo",
+			"Comment": "v1.1.0-44-gae043a2",
+			"Rev": "ae043a2b2a91d6441adedc96d2c01958a78ee516"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega",
+			"Comment": "v1.0-41-ga91b9a2",
+			"Rev": "a91b9a2e8063d07570320914bfe10a91d9323074"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Rev": "49c95bdc21843256fb6c4e0d370a05f24a0bf213"
+		}
+	]
+}
