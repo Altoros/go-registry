@@ -1,4 +1,4 @@
-package go_registry
+package main
 
 import (
 	"io/ioutil"

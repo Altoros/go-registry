@@ -1,4 +1,4 @@
-package go_registry
+package main
 
 import (
 	"flag"
@@ -50,17 +50,15 @@ func main() {
 
 	registryServerManager := biregistry.NewServerManager(logger)
 
-	_, err = registryServerManager.Start(config.Username, config.Password, config.Host, config.Port)
-	if err != nil {
-		logger.Error(tag, err.Error())
-	}
-
-	// // registryServer
-	// go func() {
-	// 	broker.Start()
-	// }()
-	// handleSignals()
-	// broker.Stop()
+	// registryServer
+	go func() {
+		_, err = registryServerManager.Start(config.Username, config.Password, config.Host, config.Port)
+		if err != nil {
+			logger.Error(tag, err.Error())
+		}
+	}()
+	handleSignals()
+	// registryServerManager.Stop()
 }
 
 func handleSignals() {
